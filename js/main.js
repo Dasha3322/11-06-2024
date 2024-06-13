@@ -66,3 +66,11 @@ $('.slider').slick({
     // responsive - для адаптации медиа запросов
   });
 
+  AOS.init();
+
+  $('select').niceSelect();
+
+  MicroModal.init({
+    disableScroll: true,
+});
+

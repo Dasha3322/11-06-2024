@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,19 +17,59 @@
     <div class="block block-2 red"></div>
     <div class="block block-1"></div>
     <div class="block block-2"></div> -->
-    <div class="slider">
+    <!-- <div class="slider"> -->
         <div class="item"><img src="free-png.ru-696.png" alt=""></div>
         <div class="item"><img src="free-png.ru-696.png" alt=""></div>
+        <div data-aos="fade-right" class="item"><img src="free-png.ru-696.png" alt=""></div>
+        <div data-aos="fade-up" class="item"><img src="free-png.ru-696.png" alt=""></div>
         <div class="item"><img src="free-png.ru-696.png" alt=""></div>
-        <div class="item"><img src="free-png.ru-696.png" alt=""></div>
-        <div class="item"><img src="free-png.ru-696.png" alt=""></div>
-    </div>
+    <!-- </div> -->
+    <a data-fancybox="gallery" href="https://abrakadabra.fun/uploads/posts/2022-02/1644272359_43-abrakadabra-fun-p-moi-sosed-totoro-oboi-61.jpg">
+        <img src="https://abrakadabra.fun/uploads/posts/2022-02/1644272359_43-abrakadabra-fun-p-moi-sosed-totoro-oboi-61.jpg" alt="">
+    </a>
+    <a data-fancybox="gallery" href="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_654b82446e108c2cca2fab2a_654b83dfbc0e5573c9181f2f/scale_1200">
+        <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_654b82446e108c2cca2fab2a_654b83dfbc0e5573c9181f2f/scale_1200" alt="">
+    </a>
+    <select>
+        <option value="1">Текст</option>
+        <option value="1">Текст2</option>
+        <option value="1">Текст3</option>
+        <option value="1">Текст4</option>
+        <option value="1">Текст5</option>
+    </select>
+    <button data-micromodal-trigger="modal-1">нажми</button>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+              <h2 class="modal__title" id="modal-1-title">
+                Micromodal
+              </h2>
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <p>
+                Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button class="modal__btn modal__btn-primary">Continue</button>
+              <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+  
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <!-- сначала jquery, потом плагины, потом main -->
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
